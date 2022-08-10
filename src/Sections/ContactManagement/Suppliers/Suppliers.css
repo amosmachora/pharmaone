@@ -1,0 +1,16 @@
+.supplier-id,
+.supplier-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.supplier-info {
+  margin-top: 50px;
+}
+.supplier-info > div {
+  border: 1px solid var(--black);
+  border-radius: 4px;
+  padding: 20px;
+}
+.send-mail {
+  margin-top: 30px;
+}

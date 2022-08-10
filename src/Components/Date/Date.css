@@ -1,0 +1,28 @@
+.date__greeting {
+  font-weight: 600;
+  color: var(--black);
+  font-size: 14px;
+  margin-left: 10px;
+}
+.moon,
+.sun {
+  justify-content: flex-end;
+}
+.date__btm > :first-child {
+  margin-right: 15px;
+}
+.date__btm {
+  justify-content: flex-end;
+  font-size: 12px;
+  color: var(--black);
+}
+.date__btm > :last-child {
+  width: 50px;
+  text-align: right;
+  overflow: hidden;
+}
+@media screen and (max-width: 650px) {
+  .date {
+    margin-right: unset;
+  }
+}

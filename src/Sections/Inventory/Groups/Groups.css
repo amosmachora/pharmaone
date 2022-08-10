@@ -1,0 +1,27 @@
+.Group__container-titles {
+  justify-content: space-between;
+  background-color: var(--white);
+  height: 40px;
+  padding: 10px;
+}
+.Group__container-titles > div {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+}
+.Group__container-titles > div > p {
+  margin-right: 5px;
+  font-weight: 600;
+}
+.titleseparator {
+  border: 1px solid var(--border);
+}
+.Group__container {
+  border-radius: 4px;
+  margin-top: 30px;
+  border: 2px solid var(--border);
+}
+.Group__container-top {
+  margin-bottom: 15px;
+  justify-content: space-between;
+}

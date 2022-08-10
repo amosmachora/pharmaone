@@ -1,0 +1,34 @@
+.SingleMedicine__container {
+  position: relative;
+  height: calc(100% / 6);
+}
+.medicine-splitter {
+  width: 100%;
+  height: 0.5px;
+  background-color: var(--border);
+  position: absolute;
+  bottom: 0;
+}
+.SingleMedicine__body {
+  width: 100%;
+  justify-content: space-around;
+}
+.SingleMedicine__body > * {
+  width: 200px;
+}
+.SingleMedicine__body > :first-child {
+  margin-left: 50px;
+}
+.SingleMedicine__body > p {
+  margin: 15px 0px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: var(--black);
+}
+.SingleMedicine__body-link {
+  cursor: pointer;
+}
+.SingleMedicine__body-link > img {
+  margin-left: 10px;
+}

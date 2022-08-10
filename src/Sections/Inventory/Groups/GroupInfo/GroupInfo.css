@@ -1,0 +1,135 @@
+.Group__info-top {
+  justify-content: space-between;
+}
+.Group__overlay {
+  position: absolute;
+  height: 100%;
+  width: 75%;
+}
+.Group__info > * {
+  margin-bottom: 20px;
+}
+.Group__info > :nth-child(3) {
+  border-radius: 4px;
+  margin-bottom: 50px;
+}
+.modal {
+  width: 570px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 8px;
+}
+.modal > * {
+  margin-bottom: 25px;
+}
+.modal > :nth-child(2) {
+  margin-bottom: 40px;
+}
+.modal__title > p {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.closemodal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.modal__subtitle > p {
+  margin-bottom: 10px;
+}
+.successConfirmation {
+  background-color: #01a7684d;
+  width: 242px;
+  padding: 10px;
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  bottom: 150px;
+  transform: translate(-50%, -50%);
+}
+.successConfirmation img {
+  margin: 3px;
+}
+.deleteGroupModal {
+  width: 450px;
+  background-color: var(--white);
+  padding: 40px 40px 20px 40px;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  text-align: center;
+}
+.deleteGroupModal > img {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.deleteGroup__choices {
+  margin-top: 40px;
+}
+.deleteGroup__choices > :first-child {
+  margin-right: 60px;
+}
+.deleteMessage {
+  position: absolute;
+  bottom: 25%;
+  left: 35%;
+  z-index: 3;
+  background-color: #01a7684d;
+  border-radius: 4px;
+  text-align: left;
+  padding: 10px;
+  width: 242px;
+  justify-content: space-around;
+}
+.empty-group {
+  text-align: center;
+  padding: 20px 0;
+}
+.open-delete-modal-button {
+  width: fit-content;
+}
+.search-items {
+  height: 150px;
+  width: 400px;
+  overflow-y: scroll;
+}
+.add-to-group-search-bar {
+  position: relative;
+}
+.add-to-group-search-bar > input {
+  background-color: transparent;
+  width: 400px;
+  height: 40px;
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 4px 4px 0px 4px;
+  outline: none;
+  border: 1px solid var(--black);
+}
+.add-to-group-search-bar > img {
+  position: absolute;
+  right: 20%;
+  top: 35%;
+}
+.add-to-group-search-bar > input:hover {
+  border-color: var(--black);
+}
+.add-to-group-search-bar > input:focus {
+  border-color: var(--skyBlue);
+  outline: none;
+}
+.add-to-group-search-bar > input:focus ~ img {
+  display: none;
+}

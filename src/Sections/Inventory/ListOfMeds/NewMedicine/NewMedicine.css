@@ -1,0 +1,93 @@
+.medicineaddform {
+  margin: 20px 0px;
+  align-items: unset;
+  position: relative;
+  width: 100%;
+}
+.medicineaddform > * {
+  margin-top: 10px;
+}
+.medicineaddform input {
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid rgb(174, 181, 187);
+}
+.medicineaddform input:hover {
+  border: 1px solid var(--black);
+}
+.medicineaddform input:focus {
+  outline: none;
+  border: 1px solid var(--skyBlue);
+}
+.medicineaddform > .flex {
+  width: 100%;
+  width: 75%;
+}
+.medicineaddform > .flex input {
+  border-radius: 4px;
+  width: 100%;
+  height: 38px;
+}
+.medicineaddform > .flex > label {
+  width: 49%;
+}
+#selectFormMedicineGroup {
+  border: 0.4px solid rgb(174, 181, 187);
+  border-radius: 4px;
+  height: 38px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 0.9rem;
+  background-color: #e3ebf3;
+}
+#selectFormMedicineGroup:hover {
+  border: 1px solid var(--black);
+}
+#selectFormMedicineGroup:focus {
+  border: 1px solid var(--skyBlue);
+}
+#submitnewmedicine {
+  border: none;
+  border-radius: 4px;
+  background-color: #f0483e;
+  color: var(--white);
+  width: 162px;
+  height: 46px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.Success__modal {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 2%;
+  left: 33%;
+  z-index: 2;
+  background-color: var(--white);
+  border-radius: 4px;
+  text-align: center;
+}
+.Success__modal > :first-child {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.Success__modal > p {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.Success__modal > img {
+  position: absolute;
+  top: 0px;
+  left: 40%;
+}
+.Success__modal > div {
+  cursor: pointer;
+}
+.medicineaddform textarea {
+  width: 75%;
+  height: 85px;
+  background-color: transparent;
+}
+.input-error {
+  color: var(--red);
+}

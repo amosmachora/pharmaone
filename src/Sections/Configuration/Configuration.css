@@ -1,0 +1,55 @@
+.Configuration__container {
+  border: 1px solid var(--border);
+  width: 45%;
+  border-radius: 4px;
+}
+.Configuration__mid {
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.Configuration__mid img {
+  cursor: pointer;
+}
+.Configuration__container-top {
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.Configuration__container-splitter {
+  height: 1px;
+  width: 100%;
+  background-color: var(--border);
+}
+.Configuration__container-bottom {
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.Configuration__container:hover {
+  border: 1px solid var(--skyBlue);
+}
+.Configuration__container:hover > .Configuration__container-splitter {
+  background-color: var(--skyBlue);
+}
+.Configuration__container-top > p {
+  font-weight: 600;
+}
+.Configuration__container-bottom :first-child:not(div) {
+  font-weight: 700;
+  font-size: calc(1rem + 4px);
+}
+.Configuration__container-bottom :last-child:not(div) {
+  font-weight: 500;
+  font-size: calc(1rem - 2px);
+}
+.configuration-inputs {
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  color: var(--black);
+}
+.configuration-inputs::-webkit-input-placeholder {
+  color: var(--black);
+}
+.configuration-inputs:focus {
+  border: var(--skyBlue);
+  outline: none;
+}

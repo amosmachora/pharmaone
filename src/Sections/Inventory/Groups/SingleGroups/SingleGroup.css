@@ -1,0 +1,19 @@
+.Singlegroup__container {
+  justify-content: space-around;
+  background-color: var(--white);
+}
+.Singlegroup__container > * {
+  width: 150px;
+  height: 49px;
+}
+.Singlegroup__container > p {
+  padding-top: 12px;
+}
+.Singlegroup__container img {
+  margin-left: 5px;
+}
+.groupsplitter {
+  height: 1px;
+  width: 100%;
+  background-color: var(--border);
+}

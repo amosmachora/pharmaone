@@ -1,0 +1,31 @@
+.Dashboard__container {
+  height: 100%;
+}
+.Dashboard__top {
+  background-color: var(--bgMain);
+  padding: var(--padding-sides);
+}
+.Dashboard__top-name {
+  justify-content: space-between;
+}
+.Dashboard__top-boxes {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.Dashboard__bottom {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3% var(--padding-sides);
+  height: 47%;
+}
+.Dashboard__bottom > :first-child,
+.Dashboard__bottom > :nth-child(2) {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 650px) {
+  .Dashboard__top-boxes {
+    justify-content: center;
+  }
+}

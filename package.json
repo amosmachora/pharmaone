@@ -1,0 +1,52 @@
+{
+  "name": "pharmaone-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/date-fns": "^2.13.1",
+    "@date-io/moment": "^2.13.1",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/lab": "^5.0.0-alpha.78",
+    "@mui/material": "^5.6.2",
+    "@mui/x-date-pickers": "^5.0.0-alpha.1",
+    "@mui/x-date-pickers-pro": "^5.0.0-alpha.1",
+    "@mui/x-license-pro": "^5.9.0",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "chart.js": "^3.7.1",
+    "moment": "^2.29.2",
+    "react": "^18.0.0",
+    "react-chartjs-2": "^4.1.0",
+    "react-dom": "^18.0.0",
+    "react-hook-form": "^7.30.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

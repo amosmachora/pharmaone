@@ -1,0 +1,48 @@
+.DashBoardLinks__container {
+  width: 48.6%;
+  border: 1px solid var(--border);
+  background: var(--white);
+  border-radius: 4px;
+}
+.Dashboard__links-top {
+  justify-content: space-between;
+  padding: 7px 20px;
+}
+.Dashboard__links-top > p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.Dashboard__links-link > p {
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-right: 10px;
+}
+.splitterlinks {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border);
+}
+.Dashboard__links-bottom {
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.links-bottomleft > :first-child,
+.links-bottomright > :first-child {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--black);
+}
+.links-bottomleft > :nth-child(2),
+.links-bottomright > :nth-child(2) {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--black);
+}
+
+@media screen and (max-width: 650px) {
+  .DashBoardLinks__container {
+    width: 100%;
+  }
+}

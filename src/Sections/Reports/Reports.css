@@ -1,0 +1,7 @@
+.Salesreport__container > .flex__container > :first-child {
+  border: 1px solid red;
+  margin-right: 50px;
+}
+.Salesreport__container > .flex__container {
+  margin-top: 50px;
+}

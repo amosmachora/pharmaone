@@ -1,0 +1,16 @@
+.Redbutton__container {
+  height: 46px;
+  min-width: 162px;
+  max-width: 250px;
+  border-radius: 4px;
+  justify-content: center;
+  cursor: pointer;
+}
+.Redbutton__container > p {
+  color: var(--white);
+  margin-left: 7px;
+}
+
+.Redbutton__container > .delete__text {
+  color: var(--red);
+}

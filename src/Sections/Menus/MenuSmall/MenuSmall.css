@@ -1,0 +1,38 @@
+.menu-small {
+  width: 5%;
+  background-color: var(--darkBlue);
+  height: 100%;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-links {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+.menu-links:hover > path {
+  fill: var(--primaryGreen);
+  transition: fill 300ms ease-in-out;
+}
+.menu-small > :first-child {
+  margin-left: 12px;
+}
+.menu-small-toggle {
+  position: absolute;
+  right: 0;
+  bottom: 2%;
+  transform: translateX(100%);
+}
+.tech-help-small.technical-active > path,
+.covid-small.covid-active > path,
+.application-settings-small.settings-active > path,
+.chat-with-others-small.chat-active > path,
+.notifications-small.notification-active > path,
+.contact-management-small.contact-management-active > path,
+.configuration-small.configuration-active > path,
+.reports-small.reports-active > path,
+.inventory-small.inventory-active > path,
+.dashboard-small.dashboard-active > path {
+  fill: var(--primaryGreen);
+}

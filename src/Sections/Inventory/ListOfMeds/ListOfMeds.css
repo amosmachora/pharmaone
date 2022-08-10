@@ -1,0 +1,99 @@
+.list-of-medicine {
+  position: relative;
+}
+.Inventory__container-top {
+  justify-content: space-between;
+  align-items: center;
+}
+.Inventory__container-mid {
+  justify-content: space-between;
+  margin-top: 25px;
+}
+#selectmedgroup {
+  width: 200px;
+  height: 38px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+#selectmedgroup:hover,
+#selectmedgroup:focus,
+#selectmedgroup:focus-visible {
+  border: 1px solid var(--skyBlue);
+  outline: none;
+}
+.SearchMed > :first-child {
+  margin-right: 10px;
+  height: 14px;
+  width: 14px;
+}
+.Inventory__container-bottom {
+  background-color: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  margin-top: 20px;
+  position: relative;
+  height: 65%;
+  overflow: hidden;
+}
+.Inventory__container-titles {
+  justify-content: space-around;
+  height: 15%;
+}
+.Inventory__container-body {
+  height: 85%;
+  overflow-y: hidden;
+}
+.Inventory__container-titles > * {
+  display: flex;
+  align-items: center;
+  margin: 15px 0px;
+  cursor: pointer;
+  width: 200px;
+}
+.Inventory__container-titles > :first-child {
+  margin-left: 50px;
+}
+.Inventory__container-titles > div > :nth-child(2) {
+  margin-left: 5px;
+}
+.Inventory__container-titles > :last-child {
+  cursor: text;
+}
+.Inventory__container-titles p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+#pageswitch {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  width: 90px;
+  height: 20px;
+}
+.listofmeds__footer {
+  justify-content: space-between;
+  padding: 10px 10px;
+  position: absolute;
+  bottom: 0;
+  width: 92%;
+}
+.containersplitter {
+  width: 100%;
+  height: 2px;
+  background-color: var(--border);
+}
+.listofmeds__footer-pageswitch > button {
+  cursor: pointer;
+  width: 27px;
+  height: 27px;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+}
+.listofmeds__footer-pageswitch > button:disabled {
+  border: 1px solid var(--border);
+  cursor: text;
+}
+.Inventory__container-titles > *:not(:last-child) > p:hover {
+  font-size: calc(1rem - 1px);
+  transition: font-size 200ms ease-in;
+}

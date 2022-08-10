@@ -1,0 +1,54 @@
+.Profile__on.profile {
+  top: 170%;
+  right: -15px;
+  border: 1px solid var(--darkBlue);
+}
+.Profile__on.dashboard {
+  top: 120%;
+  right: 5%;
+  border: 1px solid var(--border);
+}
+.Profile__on.dashboard .circle {
+  border-top: 1px solid var(--border);
+  right: 5%;
+}
+.Profile__on {
+  background-color: var(--white);
+  width: 125px;
+  height: 80px;
+  border-radius: 4px;
+  position: absolute;
+  font-size: 14px;
+  z-index: 2;
+}
+.my-profile {
+  height: 50%;
+}
+.Logout {
+  height: 50%;
+}
+.Profile__on.profile .Logout p {
+  color: var(--red);
+}
+.section {
+  width: 100%;
+  padding: 15px;
+}
+.section img {
+  margin-right: 10px;
+}
+.profile-tab-splitter {
+  height: 1px;
+  width: 100%;
+  background-color: var(--border);
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: var(--white);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 12px;
+  transform: translateY(-40%);
+}

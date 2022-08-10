@@ -1,0 +1,110 @@
+.sales-report__mid {
+  margin-top: 16px;
+}
+.sales-report__mid p {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+#select-username {
+  width: 17vw;
+}
+#select-sales-group {
+  width: 27vw;
+}
+#select-sales-group,
+#select-username {
+  height: 38px;
+  border-radius: 5px;
+  border-width: 1.5px;
+  text-align: center;
+  background-color: var(--lightGrey);
+  font-size: 1rem;
+  color: var(--darkBlue);
+  font-size: 14px;
+}
+#select-sales-group:hover,
+#select-username:hover {
+  border-color: #000;
+  transition: border-color 100ms ease-in;
+}
+#select-sales-group:focus,
+#select-username:focus {
+  transition: border-color 100ms ease-in;
+  border-color: var(--blue);
+  border-width: 2px;
+}
+.sales-report__bottom {
+  margin-top: 42px;
+}
+.sales-report__bottom-chart {
+  width: 41vw;
+  height: 52.5vh;
+  border: 1px solid var(--border);
+  background-color: var(--white);
+}
+.sales-report__bottom-chart:hover {
+  border: 1px solid var(--skyBlue);
+}
+.sales-report__bottom-chart:hover > .Configuration__container-splitter {
+  background-color: var(--skyBlue);
+}
+.sales-report__bottom-chart > p {
+  color: var(--black);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 20px 10px 20px;
+}
+.sales-report__bottom-orders {
+  border: 1px solid var(--border);
+  background-color: var(--white);
+  width: 30vw;
+  height: 52.5vh;
+}
+.sales-report__bottom-orders:hover {
+  border: 1px solid var(--skyBlue);
+}
+.sales-report__bottom-orders:hover > .Configuration__container-splitter {
+  background-color: var(--skyBlue);
+}
+.Orders__title > p {
+  color: var(--black);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.Orders__title > p:first-child {
+  text-align: center;
+  width: 25%;
+}
+.Orders__title > p:last-child {
+  width: 75%;
+  text-align: center;
+}
+.Orders__body {
+  padding: 9px;
+  height: 88%;
+  overflow-y: scroll;
+}
+.Orders__body > .flex {
+  justify-content: space-between;
+  padding: 4%;
+  padding-right: 0;
+  width: auto;
+}
+.Orders__body > .flex > p {
+  width: 35%;
+}
+.Orders__body > .flex > .flex > p,
+.Orders__body > .flex > .flex > p {
+  width: 100px;
+}
+.Orders__body p {
+  font-weight: 400;
+  font-size: calc(1rem - 2px);
+  color: var(--black);
+  font-weight: 500;
+}
+.date-range-picker {
+  width: 27vw;
+  outline: 1px solid red;
+}

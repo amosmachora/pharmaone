@@ -1,0 +1,11 @@
+.Inventory__container {
+  height: 100%;
+  background-color: var(--bgMain);
+}
+.Inventory__body {
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.Inventory__body > * {
+  margin-right: 50px;
+}

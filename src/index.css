@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+:root {
+  --darkBlue: #1d242e;
+  --black: #0b0d1f;
+  --black2: #283342;
+  --black3: #1d242e;
+  --red: #f0483e;
+  --green: #01a768;
+  --skyBlue: #03a9f5;
+  --blue: #3385d6;
+  --yellow: #fed600;
+  --white: #ffffff;
+  --primaryGreen: #009099;
+  --lightGrey: #e3ebf3;
+  --border: rgb(174, 181, 187);
+  --bgMain: rgba(237, 241, 245, 1);
+  --primary: #f0483e;
+  --tab-padding: 0 9% 0 5%;
+  --padding-sides: 3%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+*::-webkit-scrollbar {
+  width: 7px;
+}
+*::-webkit-scrollbar-track {
+  background-color: var(--black2);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(98, 108, 122, 1);
+  border-radius: 20px;
+}
+.flex__container {
+  display: flex;
+  align-items: center;
+}
+.flex__container-v {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+select {
+  cursor: pointer;
+  text-align: center;
+}
+select:focus {
+  outline: none;
+  border: 1px solid var(--skyBlue);
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background-image: url("./Assets/CancelSearch.svg");
+  background-size: 16px 16px;
+  cursor: pointer;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="submit"] {
+  border: none;
+  border-radius: 4px;
+  background-color: #f0483e;
+  color: var(--white);
+  width: 162px;
+  height: 46px;
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+.padding-around {
+  padding: var(--padding-sides);
+  background-color: var(--bgMain);
+  height: 100%;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-around {
+  justify-content: space-around;
+}
+.cursor {
+  cursor: pointer;
+}
+.align-center {
+  align-items: center;
+}
+.price {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.search {
+  position: relative;
+  width: 35%;
+}
+.search > img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search > input {
+  border: 1px solid var(--border);
+  background-color: var(--lightGrey);
+  height: 38px;
+  width: 100%;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 4px;
+}
+.search > input:focus {
+  outline: none;
+  border-color: var(--skyBlue);
+}
+.search > input:focus ~ img {
+  display: none;
+}
+.download-report {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background-color: var(--white);
+  height: 46px;
+  width: 19%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--black3);
+  padding: 0 1%;
+  position: relative;
+}
+.border-radius-4 {
+  border-radius: 4px;
+}
+.border-color {
+  border-color: var(--border);
+}
+.show {
+  outline: 1px solid red;
+}
+
+@media screen and (max-width: 1150px) {
+  .download-report {
+    width: 30%;
+  }
+}

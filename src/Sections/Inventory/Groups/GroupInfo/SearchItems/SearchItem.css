@@ -1,0 +1,9 @@
+.search-item {
+  padding: 5px 20px;
+}
+.plus-icon-tick-box {
+  height: 25px;
+  width: 25px;
+  pointer-events: none;
+  margin-right: -5px;
+}

@@ -1,0 +1,50 @@
+#groupName {
+  height: 30px;
+  width: 250px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 5px;
+  background-color: transparent;
+}
+#groupName:hover {
+  border-color: var(--black);
+}
+#groupName:focus {
+  border-color: var(--skyBlue);
+  outline: none;
+}
+#groupDescription {
+  height: 100px;
+  width: 500px;
+  background-color: transparent;
+}
+.form__container {
+  margin-top: 50px;
+}
+.form__container > :nth-child(2) {
+  margin-top: 20px;
+}
+.NewGroup__container {
+  position: relative;
+  height: 100%;
+}
+.NewGroup__container > .spinnerContainer {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.form__container input[type="submit"] {
+  margin-top: 20px;
+}
+.success-confirmation {
+  position: absolute;
+  bottom: 25%;
+  left: 30%;
+  width: 350px;
+  background-color: #01a7684d;
+  border-radius: 4px;
+  padding: 10px;
+  justify-content: space-around;
+}
