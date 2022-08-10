@@ -101,6 +101,7 @@ const App = () => {
 
   useEffect(() => {
     console.log(process.env.REACT_APP_API_ROOT_URL);
+    //Try Vercel
     fetchFromApi();
   }, []);
 
