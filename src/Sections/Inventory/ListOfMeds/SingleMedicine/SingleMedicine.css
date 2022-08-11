@@ -32,3 +32,18 @@
 .SingleMedicine__body-link > img {
   margin-left: 10px;
 }
+@media screen and (max-width: 650px) {
+  .SingleMedicine__body > * {
+    width: calc(100% / 5);
+    text-align: center;
+  }
+  .SingleMedicine__body > :first-child {
+    margin-left: 0;
+  }
+  .SingleMedicine__body > p {
+    margin: 0;
+  }
+  .SingleMedicine__body-link > img {
+    display: none;
+  }
+}

@@ -51,8 +51,10 @@ import Mail from "./icons8-mail-64.png";
 import Sell from "./icons8-sell-24.png";
 import ToggleMenu from "./Toggle-menu.svg";
 import ArrowBlack from "./ArrowBlack.svg";
+import Hamburger from "./hamburger.svg";
 
 export default {
+  Hamburger,
   ArrowBlack,
   ToggleMenu,
   Sell,

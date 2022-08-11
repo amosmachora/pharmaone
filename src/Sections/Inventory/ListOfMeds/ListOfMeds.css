@@ -97,3 +97,33 @@
   font-size: calc(1rem - 1px);
   transition: font-size 200ms ease-in;
 }
+@media screen and (max-width: 1150px) {
+  .listofmeds__footer {
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .list-of-medicine {
+    height: 90vh;
+  }
+  .Inventory__container-top {
+    flex-direction: column;
+  }
+  .Inventory__container-top > a {
+    margin-top: 20px;
+  }
+  .Inventory__container-mid > .search {
+    width: 50%;
+  }
+  /* .Inventory__container-titles {
+    padding: 0 20px;
+  } */
+  .Inventory__container-titles > :first-child {
+    margin-left: 0;
+  }
+  .Inventory__container-titles > * {
+    margin: 0;
+    width: calc(100% / 5);
+    text-align: center;
+  }
+}

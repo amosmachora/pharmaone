@@ -18,3 +18,9 @@
   line-height: 21px;
   color: var(--black);
 }
+
+@media screen and (max-width: 650px) {
+  .sub {
+    text-align: center;
+  }
+}

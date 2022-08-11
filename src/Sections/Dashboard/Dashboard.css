@@ -26,6 +26,6 @@
 
 @media screen and (max-width: 650px) {
   .Dashboard__top-boxes {
-    justify-content: center;
+    justify-content: space-between;
   }
 }

@@ -91,7 +91,7 @@ const LineChart = ({ selectedUserName, selectedGroup }) => {
       ],
     },
   };
-  //TODO Mke background linear gradient
+  //TODO Make background linear gradient
   return (
     <div className="line-chart__container">
       <Line data={data} options={options} draggable={true} />

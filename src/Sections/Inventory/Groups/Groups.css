@@ -25,3 +25,14 @@
   margin-bottom: 15px;
   justify-content: space-between;
 }
+@media screen and (max-width: 650px) {
+  .Group__container-top {
+    flex-direction: column;
+  }
+  .Group__container-top > a {
+    margin: 30px 0;
+  }
+  .groups {
+    height: 90vh;
+  }
+}

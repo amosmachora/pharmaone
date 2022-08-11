@@ -1,7 +1,17 @@
 .Salesreport__container > .flex__container > :first-child {
-  border: 1px solid red;
   margin-right: 50px;
 }
 .Salesreport__container > .flex__container {
   margin-top: 50px;
+}
+@media screen and (max-width: 650px) {
+  .Salesreport__container > .flex__container {
+    flex-direction: column;
+  }
+  .Salesreport__container > .flex__container > :first-child {
+    margin-right: 0;
+  }
+  .Salesreport__container {
+    height: 90vh;
+  }
 }

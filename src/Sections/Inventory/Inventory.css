@@ -1,5 +1,5 @@
 .Inventory__container {
-  height: 100%;
+  height: 90vh;
   background-color: var(--bgMain);
 }
 .Inventory__body {
@@ -8,4 +8,14 @@
 }
 .Inventory__body > * {
   margin-right: 50px;
+}
+@media screen and (max-width: 1150px) {
+  .Inventory__body > div {
+    margin: 20px;
+  }
+  .Inventory__body {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 650px) {
 }

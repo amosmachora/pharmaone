@@ -15,15 +15,13 @@ const SalesReport = () => {
   };
 
   const { usersList, salesList, groupsList } = useContext(dataFlowContext);
-  const [value, setValue] = React.useState([null, null]);
   const [selectedUserName, setSelectedUserName] = useState("All Users");
   const [selectedGroup, setSelectedGroup] = useState("All Groups");
 
   useUpdateLogger(salesList);
 
-  // TODO this page has problems
   return (
-    <div className="Inventory__container">
+    <div className="padding-around">
       <div className="sales-report__top flex space-between">
         <SectionName title={title} />
         <DownloadReport />

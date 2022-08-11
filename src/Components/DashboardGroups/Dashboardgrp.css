@@ -40,11 +40,25 @@
   .Dashboardgrp__container {
     width: 47%;
     margin-bottom: 20px;
+    height: 180px;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .Dashboardgrp__container > img {
+    margin: unset;
+    height: unset;
+    width: unset;
+  }
+  .Dashboardgrp__btm {
+    height: 40px;
+  }
+  .Dashboardgrp__container > p:nth-child(3) {
+    margin-top: -10px;
   }
 }
 
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
   .Dashboardgrp__container {
-    width: 80%;
+    width: 47%;
   }
-}
+} */

@@ -108,3 +108,26 @@
   width: 27vw;
   outline: 1px solid red;
 }
+@media screen and (max-width: 1150px) {
+  .sales-report__bottom-chart {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .sales-report__bottom-chart {
+    width: 95vw;
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .sales-report__bottom-orders {
+    width: 95vw;
+  }
+  .sales-report__bottom {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 650px) {
+  .sales-report__bottom {
+    flex-direction: column;
+  }
+}

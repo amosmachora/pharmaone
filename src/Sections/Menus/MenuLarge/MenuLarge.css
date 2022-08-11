@@ -91,3 +91,8 @@
   right: 0px;
   transform: translateX(100%);
 }
+@media screen and (max-width: 1150px) {
+  .Pharmacy__sidebar {
+    display: none;
+  }
+}

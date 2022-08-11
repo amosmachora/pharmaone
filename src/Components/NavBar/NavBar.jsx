@@ -6,6 +6,7 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <div className="Pharmacy__topbar flex">
+      <img src={Assets.Hamburger} alt="Hamburger Icon" className="hamburger" />
       <div className="Topbar__input flex">
         {/* TODO Make this search work */}
         <input

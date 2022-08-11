@@ -41,7 +41,7 @@ const Groups = () => {
   // const handleSort = () => {}
 
   return (
-    <div className="padding-around">
+    <div className="groups padding-around">
       <div className="Group__container-top flex__container">
         <SectionName title={title} />
         <Link

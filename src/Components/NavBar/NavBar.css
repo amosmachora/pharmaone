@@ -58,3 +58,27 @@
 .Topbar__date {
   width: 25%;
 }
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .Pharmacy__topbar {
+    height: 100px;
+  }
+  .Topbar__date {
+    width: auto;
+    margin-left: 10px;
+  }
+  .Topbar__change-lang {
+    width: auto;
+  }
+  .Topbar__input {
+    width: 25%;
+  }
+  .hamburger {
+    display: unset;
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -5,6 +5,7 @@ import { dataFlowContext } from "../../../App";
 import Assets from "../../../Assets/Assets";
 import SingleMedicine from "./SingleMedicine/SingleMedicine";
 import { Link } from "react-router-dom";
+import { useUpdateLogger } from "../../../Utilities/UpdateLogger";
 
 /**
  * This component will have some form of fetch that will pull data
@@ -131,6 +132,9 @@ const ListOfMeds = () => {
   };
 
   //TODO Remove active child tab. Its stupid
+  useEffect(() => {
+    console.log(Array.from({ pages: numberOfPages }));
+  }, [[], numberOfPages]);
 
   return (
     <div className="list-of-medicine padding-around flex-v">
@@ -240,11 +244,12 @@ const ListOfMeds = () => {
               <img src={Assets.PageSwitcherLeft} alt="Change Page" />
             )}
           </button>
-          {/* TODO Make this pages dynamic. Relevant to the data */}
           <select name="pageswitch" id="pageswitch">
-            <option value="Jan2022">Page 1</option>
-            <option value="Feb2022">Page 2</option>
-            <option value="Mar2022">Page 3</option>
+            {Array.from({ length: numberOfPages }).map((_, i) => (
+              <option key={i} value={i + 1}>
+                Page {i + 1}
+              </option>
+            ))}
           </select>
           <button
             onClick={() => switchPage("front")}
