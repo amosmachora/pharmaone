@@ -52,8 +52,10 @@ import Sell from "./icons8-sell-24.png";
 import ToggleMenu from "./Toggle-menu.svg";
 import ArrowBlack from "./ArrowBlack.svg";
 import Hamburger from "./hamburger.svg";
+import CloseBlue from "./Close-Blue.svg";
 
 export default {
+  CloseBlue,
   Hamburger,
   ArrowBlack,
   ToggleMenu,

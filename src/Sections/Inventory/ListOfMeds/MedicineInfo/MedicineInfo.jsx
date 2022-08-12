@@ -10,7 +10,6 @@ import { useUpdateLogger } from "../../../../Utilities/UpdateLogger";
 const MedicineInfo = () => {
   let params = useParams();
   let {
-    getSpecificMedicineWithId,
     setOverlay,
     setLoading,
     groupsList,
@@ -20,13 +19,9 @@ const MedicineInfo = () => {
     setReportsOn,
     refetchRequired,
     setRefetchRequired,
+    handleSuccessCalls,
   } = useContext(dataFlowContext);
 
-  const [medicineName, setMedicineName] = useState(" ");
-  const fetchMedicineName = () => {
-    const data = getSpecificMedicineWithId(params.medicineId);
-    setMedicineName(data.medicineName);
-  };
   const [medicineData, setMedicineData] = useState([]);
   const [editModal, setEditModal] = useState(false);
   const [deleteModal, setDeleteModal] = useState(false);
@@ -43,7 +38,7 @@ const MedicineInfo = () => {
   let navigate = useNavigate();
 
   const title = {
-    main: medicineName,
+    main: medicineData.medicineName,
     sub: "List of medicines available for sales",
     complex: "level2",
     source1: "Inventory",
@@ -107,8 +102,6 @@ const MedicineInfo = () => {
       });
   };
 
-  useUpdateLogger(medicineData);
-
   useEffect(() => {
     if (medicineData.length === undefined) {
       fetchMedicineSupplier();
@@ -141,6 +134,7 @@ const MedicineInfo = () => {
       .then((res) => res.text())
       .then((message) => {
         console.log(message);
+        handleSuccessCalls(message);
         setLoading(false);
         setRefetchRequired(true);
       })
@@ -169,6 +163,7 @@ const MedicineInfo = () => {
     )
       .then((res) => res.text())
       .then((message) => {
+        handleSuccessCalls(message);
         console.log(message);
         setLoading(false);
         navigate("/inventory/listofmedicines");
@@ -195,6 +190,7 @@ const MedicineInfo = () => {
       )
         .then((res) => res.text())
         .then((message) => {
+          handleSuccessCalls(message);
           setRefetchRequired(true);
           console.log(message);
           setLoading(false);
@@ -213,7 +209,6 @@ const MedicineInfo = () => {
 
   useEffect(() => {
     fetchMedicineData();
-    fetchMedicineName();
   }, []);
 
   useEffect(() => {
@@ -344,7 +339,10 @@ const MedicineInfo = () => {
                     onClick={closeDeleteModal}
                   />
                   <img src={Assets.Danger} alt="Danger" />
-                  <p>Are you sure you want to delete {medicineName} ?</p>
+                  <p>
+                    Are you sure you want to delete {medicineData.medicineName}{" "}
+                    ?
+                  </p>
                   <div className="choices flex__container">
                     <input type="submit" value="Yes, Delete" />
                     <p
@@ -367,7 +365,7 @@ const MedicineInfo = () => {
         {editModal && (
           <div className="edit__modal">
             <div className="edit__modal-header flex">
-              <p>Edit {medicineName}</p>
+              <p>Edit {medicineData.medicineName}</p>
               <img
                 src={Assets.Close}
                 alt="Close button"

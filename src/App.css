@@ -15,6 +15,18 @@
   height: 100%;
   width: 80%;
 }
+.success {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 280px;
+  background-color: rgba(1, 167, 104, 0.3);
+  padding: 7px 20px;
+}
+.success img {
+  margin-right: 10px;
+}
 @media screen and (max-width: 650px) {
   .App {
     height: unset;

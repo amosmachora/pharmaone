@@ -18,6 +18,7 @@
   font-size: 1.2rem;
   padding: 10px;
   border-radius: 4px;
+  font-size: 14px;
 }
 .Topbar__input > input:focus {
   outline: none;
@@ -69,7 +70,25 @@
   position: absolute;
   z-index: 100;
 }
-
+.search-suggestions {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  z-index: 100;
+  border: 1px solid var(--skyBlue);
+  border-top: none;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--white);
+  border-radius: 0 0 4px 4px;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+.close-suggestions {
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
 @media screen and (max-width: 650px) {
   .Pharmacy__topbar {
     height: 100px;
@@ -88,5 +107,8 @@
     display: unset;
     width: 30px;
     height: 30px;
+  }
+  .search-suggestions {
+    width: 300%;
   }
 }

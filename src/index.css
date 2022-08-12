@@ -54,6 +54,13 @@ select:focus {
   outline: none;
   border: 1px solid var(--skyBlue);
 }
+a:visited {
+  color: var(--black);
+}
+a:hover {
+  color: var(--skyBlue);
+  transition: color 300ms ease-in-out;
+}
 
 input[type="search"]::-webkit-search-cancel-button {
   appearance: none;

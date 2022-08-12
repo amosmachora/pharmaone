@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
-import Assets from "../../../../Assets/Assets";
-import { SectionName, Spinner } from "../../../../Components/Components";
+import { dataFlowContext } from "../../../../App";
+import { SectionName } from "../../../../Components/Components";
 import "./NewGroup.css";
 
 const NewGroup = () => {
   const { register, handleSubmit } = useForm();
-  const [spinner, setSpinner] = useState(false);
-  const [successMessage, setSuccessMessage] = useState("");
-  const [successConfirmation, setSuccessConfirmation] = useState(false);
+  const { handleSuccessCalls, setLoading, setRefetchRequired } =
+    useContext(dataFlowContext);
   const title = {
     main: "Create new group",
     sub: "*All fields are mandatory, except mentioned as (optional).",
@@ -18,7 +17,7 @@ const NewGroup = () => {
   };
 
   const addGroup = (data) => {
-    setSpinner(true);
+    setLoading(true);
     fetch(`${process.env.REACT_APP_API_ROOT_URL}/addNewGroup`, {
       method: "POST",
       headers: {
@@ -28,25 +27,15 @@ const NewGroup = () => {
     })
       .then((res) => res.text())
       .then((responseMessage) => {
-        setSuccessMessage(responseMessage);
-        setSpinner(false);
-        setSuccessConfirmation(true);
+        setLoading(false);
+        handleSuccessCalls(responseMessage);
+        setRefetchRequired(true);
       });
-    setTimeout(() => {
-      setSuccessConfirmation(false);
-    }, 3000);
   };
 
   return (
     <>
-      <div className="Inventory__container NewGroup__container">
-        {spinner === true ? (
-          <>
-            <div className="spinnerContainer">
-              <Spinner />
-            </div>
-          </>
-        ) : null}
+      <div className="padding-around NewGroup__container">
         <SectionName title={title} />
         <form className="form__container" onSubmit={handleSubmit(addGroup)}>
           <div className="flex__container-v">
@@ -63,12 +52,6 @@ const NewGroup = () => {
             <input type="submit" />
           </div>
         </form>
-        {successConfirmation === true ? (
-          <div className="success-confirmation  flex__container">
-            <img src={Assets.Tick} alt="tick" />
-            <p>{successMessage}</p>
-          </div>
-        ) : null}
       </div>
     </>
   );

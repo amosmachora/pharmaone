@@ -16,6 +16,9 @@ const GroupInfo = () => {
     modals,
     setLoading,
     medicineList,
+    handleSuccessCalls,
+    refetchRequired,
+    setRefetchRequired,
   } = useContext(dataFlowContext);
 
   let navigate = useNavigate();
@@ -26,7 +29,6 @@ const GroupInfo = () => {
   const [deleteModal, setDeleteModal] = useState(false);
   const [groupMedicines, setGroupMedicines] = useState([]);
   const [noOfMedicine, setNoOfMedicine] = useState(0);
-  const [refetchRequired, setRefetchRequired] = useState(false);
   const [filteredMedicineList, setFilteredMedicineList] =
     useState(medicineList);
   const [medicinesToBeChanged, setMedicinesToBeChanged] = useState([]);
@@ -143,7 +145,10 @@ const GroupInfo = () => {
       },
     })
       .then((res) => res.text())
-      .then((response) => console.log(response));
+      .then((message) => {
+        setRefetchRequired(true);
+        handleSuccessCalls(message);
+      });
 
   const changeMedicineGroup = (medicineId, groupIdToChangeTo) => {
     setLoading(true);
@@ -160,7 +165,7 @@ const GroupInfo = () => {
         setLoading(false);
         return res.text();
       })
-      .then((response) => console.log(response));
+      .then((response) => handleSuccessCalls(response));
   };
 
   const removeMedicinesFromGroup = async () => {

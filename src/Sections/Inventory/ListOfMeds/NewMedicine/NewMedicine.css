@@ -91,3 +91,15 @@
 .input-error {
   color: var(--red);
 }
+.new-medicine input,
+.new-medicine textarea {
+  background-color: var(--lightGrey);
+}
+@media screen and (max-width: 1150px) {
+  .medicineaddform > .flex {
+    width: 100%;
+  }
+  .medicineaddform textarea {
+    width: 100%;
+  }
+}

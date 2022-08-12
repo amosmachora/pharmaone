@@ -26,7 +26,6 @@
 }
 .NewGroup__container {
   position: relative;
-  height: 100%;
 }
 .NewGroup__container > .spinnerContainer {
   position: absolute;

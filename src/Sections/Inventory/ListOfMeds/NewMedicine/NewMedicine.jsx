@@ -5,7 +5,8 @@ import { useForm } from "react-hook-form";
 import { dataFlowContext } from "../../../../App";
 
 const NewMedicine = () => {
-  const { groupsList, groupNames, setLoading } = useContext(dataFlowContext);
+  const { groupsList, groupNames, setLoading, handleSuccessCalls } =
+    useContext(dataFlowContext);
   const {
     register,
     handleSubmit,
@@ -31,6 +32,7 @@ const NewMedicine = () => {
       .then((res) => res.text())
       .then((message) => {
         console.log(message);
+        handleSuccessCalls(message);
         setLoading(false);
       })
       .catch((error) => console.error(error));
@@ -44,7 +46,7 @@ const NewMedicine = () => {
   };
 
   return (
-    <div className="padding-around">
+    <div className="padding-around new-medicine">
       <SectionName title={title} />
 
       <form

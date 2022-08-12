@@ -151,14 +151,6 @@ const App = () => {
     }, 500);
   };
 
-  const getSpecificMedicineWithId = (number) => {
-    const filteredData = medicineList.find((medicine) => {
-      return medicine.medicineId === number;
-    });
-
-    return filteredData;
-  };
-
   const getSpecificGroupWithName = (name) => {
     const filteredData = groupsList.find((group) => {
       return group.groupName === name;
@@ -201,6 +193,14 @@ const App = () => {
     }
   }, [medicineList]);
 
+  const [success, setSuccess] = useState(false);
+  const handleSuccessCalls = () => {
+    setSuccess(true);
+    setTimeout(() => {
+      setSuccess(false);
+    }, 3000);
+  };
+
   const flowingData = {
     refetchRequired,
     setRefetchRequired,
@@ -224,7 +224,6 @@ const App = () => {
     setNoOfSuppliers,
     setNoOfCustomers,
     setFrequentlyBoughtItem,
-    getSpecificMedicineWithId,
     getSpecificGroupWithName,
     medicineList,
     groupNames,
@@ -246,6 +245,7 @@ const App = () => {
     modals,
     suppliers,
     setSmallScreen,
+    handleSuccessCalls,
     dataGroup: [
       {
         icon: Assets.Healthy,
@@ -392,6 +392,12 @@ const App = () => {
             <div className="Pharmacy__body">
               <Outlet />
             </div>
+            {success && (
+              <div className="success flex border-radius-4">
+                <img src={Assets.Tick} alt="Tick" />
+                <p>{"Medicine Added to Group"}</p>
+              </div>
+            )}
           </div>
         </dataFlowContext.Provider>
       </div>

@@ -1,0 +1,13 @@
+.search-suggestion {
+  border-bottom: 1px solid var(--border);
+}
+.search-suggestion p:first-of-type {
+  color: var(--black);
+}
+.search-suggestion .in {
+  font-size: 11px;
+}
+.search-suggestion:hover p {
+  color: var(--skyBlue);
+  transition: color 300ms ease-in-out;
+}
