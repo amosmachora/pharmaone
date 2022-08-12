@@ -16,10 +16,12 @@ const Dashboard = () => {
     sub: "A quick data overview of the inventory",
   };
 
-  const { dataGroup, dataGroup2, setActiveTab } = useContext(dataFlowContext);
+  const { dataGroup, dataGroup2, setActiveTab, setSmallScreen } =
+    useContext(dataFlowContext);
 
   useEffect(() => {
     setActiveTab("dashboard-active");
+    setSmallScreen(false);
   }, []);
 
   return (

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./SalesReport.css";
 import { SectionName } from "../../../Components/Components";
 import LineChart from "../Linechart/Linechart";
@@ -14,11 +14,15 @@ const SalesReport = () => {
     source: "Reports",
   };
 
-  const { usersList, salesList, groupsList } = useContext(dataFlowContext);
+  const { usersList, salesList, groupsList, setSmallScreen } =
+    useContext(dataFlowContext);
   const [selectedUserName, setSelectedUserName] = useState("All Users");
   const [selectedGroup, setSelectedGroup] = useState("All Groups");
 
   useUpdateLogger(salesList);
+  useEffect(() => {
+    setSmallScreen(false);
+  }, []);
 
   return (
     <div className="padding-around">

@@ -50,6 +50,11 @@ const ListOfMeds = () => {
     setFilteredMedicineList(medicineList.slice(beginIndex, endIndex));
   };
 
+  const { setSmallScreen } = useContext(dataFlowContext);
+  useEffect(() => {
+    setSmallScreen(false);
+  }, []);
+
   const filterOnSelectChange = () => {
     if (selectedGroupValue === "All Groups") {
       setFilteredMedicineList(medicineList);

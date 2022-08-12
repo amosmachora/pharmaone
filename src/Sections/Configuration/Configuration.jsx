@@ -5,7 +5,7 @@ import Assets from "../../Assets/Assets";
 import { dataFlowContext } from "../../App";
 
 const Configuration = () => {
-  const { setActiveTab } = useContext(dataFlowContext);
+  const { setActiveTab, setSmallScreen } = useContext(dataFlowContext);
 
   const title = {
     main: "Configurations",
@@ -14,6 +14,7 @@ const Configuration = () => {
 
   useEffect(() => {
     setActiveTab("configuration-active");
+    setSmallScreen(false);
   }, []);
   return (
     <div className="padding-around">

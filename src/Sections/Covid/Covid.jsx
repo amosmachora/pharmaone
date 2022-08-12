@@ -3,10 +3,11 @@ import "./Covid.css";
 import { dataFlowContext } from "../../App";
 
 const Covid = () => {
-  const { setActiveTab } = useContext(dataFlowContext);
+  const { setActiveTab, setSmallScreen } = useContext(dataFlowContext);
 
   useEffect(() => {
     setActiveTab("covid-active");
+    setSmallScreen(false);
   }, []);
 
   return <div>Covid</div>;

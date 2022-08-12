@@ -9,12 +9,13 @@ import { Link } from "react-router-dom";
 const Groups = () => {
   const incomingData = useContext(dataFlowContext);
   const groupList = incomingData.groupsList;
-  const { noOfGroups } = useContext(dataFlowContext);
+  const { noOfGroups, setSmallScreen } = useContext(dataFlowContext);
 
   const [filteredGroupsList, setFilteredGroupsList] = useState([]);
 
   useEffect(() => {
     setFilteredGroupsList(groupList);
+    setSmallScreen(false);
   }, []);
 
   const title = {

@@ -133,3 +133,12 @@
 .add-to-group-search-bar > input:focus ~ img {
   display: none;
 }
+
+@media screen and (max-width: 650px) {
+  .Group__info-top {
+    flex-direction: column;
+  }
+  .group__info-modal {
+    margin-top: 30px;
+  }
+}

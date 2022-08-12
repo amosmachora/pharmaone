@@ -61,6 +61,14 @@
 .hamburger {
   display: none;
 }
+.small-screen-menu {
+  width: 60vw;
+  height: 90vh;
+  background-color: var(--darkBlue);
+  color: var(--white);
+  position: absolute;
+  z-index: 100;
+}
 
 @media screen and (max-width: 650px) {
   .Pharmacy__topbar {

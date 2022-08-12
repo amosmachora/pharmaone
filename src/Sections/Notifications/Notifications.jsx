@@ -3,10 +3,11 @@ import "./Notifications.css";
 import { dataFlowContext } from "../../App";
 
 const Notifications = () => {
-  const { setActiveTab } = useContext(dataFlowContext);
+  const { setActiveTab, setSmallScreen } = useContext(dataFlowContext);
 
   useEffect(() => {
     setActiveTab("notification-active");
+    setSmallScreen(false);
   }, []);
   return <div>Notifications</div>;
 };

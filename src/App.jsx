@@ -39,6 +39,7 @@ const App = () => {
   const [suppliers, setSuppliers] = useState([]);
   const [refetchRequired, setRefetchRequired] = useState(false);
   const [menuLarge, setMenuLarge] = useState(true);
+  const [smallScreen, setSmallScreen] = useState(false);
 
   useUpdateLogger(medicineList);
 
@@ -244,6 +245,7 @@ const App = () => {
     usersList,
     modals,
     suppliers,
+    setSmallScreen,
     dataGroup: [
       {
         icon: Assets.Healthy,
@@ -386,7 +388,7 @@ const App = () => {
             <MenuSmall setMenuLarge={setMenuLarge} />
           )}
           <div className="Pharmacy__right">
-            <NavBar />
+            <NavBar smallScreen={smallScreen} setSmallScreen={setSmallScreen} />
             <div className="Pharmacy__body">
               <Outlet />
             </div>

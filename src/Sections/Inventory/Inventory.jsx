@@ -5,7 +5,8 @@ import { dataFlowContext } from "../../App";
 import { useUpdateLogger } from "../../Utilities/UpdateLogger";
 
 const Inventory = () => {
-  const { dataGroup, setActiveTab } = useContext(dataFlowContext);
+  const { dataGroup, setActiveTab, setSmallScreen } =
+    useContext(dataFlowContext);
   useUpdateLogger(dataGroup);
 
   const title = {
@@ -15,6 +16,7 @@ const Inventory = () => {
 
   useEffect(() => {
     setActiveTab("inventory-active");
+    setSmallScreen(false);
   }, []);
 
   return (

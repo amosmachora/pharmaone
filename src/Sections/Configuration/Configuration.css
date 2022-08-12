@@ -53,3 +53,12 @@
   border: var(--skyBlue);
   outline: none;
 }
+@media screen and (max-width: 650px) {
+  .Configuration__mid {
+    flex-direction: column;
+  }
+  .Configuration__container {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+}

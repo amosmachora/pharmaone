@@ -3,10 +3,11 @@ import "./Settings.css";
 import { dataFlowContext } from "../../App";
 
 const Settings = () => {
-  const { setActiveTab } = useContext(dataFlowContext);
+  const { setActiveTab, setSmallScreen } = useContext(dataFlowContext);
 
   useEffect(() => {
     setActiveTab("settings-active");
+    setSmallScreen(false);
   }, []);
 
   return <div>Settings</div>;

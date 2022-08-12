@@ -5,7 +5,8 @@ import { Dashboardgrp } from "../../Components/Components";
 import { dataFlowContext } from "../../App";
 
 const Reports = () => {
-  const { dataGroup3, setActiveTab } = useContext(dataFlowContext);
+  const { dataGroup3, setActiveTab, setSmallScreen } =
+    useContext(dataFlowContext);
   const title = {
     main: "Reports",
     sub: "Overall reports related to the pharmacy",
@@ -13,6 +14,7 @@ const Reports = () => {
 
   useEffect(() => {
     setActiveTab("reports-active");
+    setSmallScreen(false);
   }, []);
 
   return (

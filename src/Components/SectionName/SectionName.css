@@ -23,4 +23,8 @@
   .sub {
     text-align: center;
   }
+  .title-main {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }

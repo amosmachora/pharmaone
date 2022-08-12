@@ -3,11 +3,12 @@ import "./ContactManagement.css";
 import { dataFlowContext } from "../../App";
 
 const ContactManagement = () => {
-  const { setActiveTab } = useContext(dataFlowContext);
-
+  const { setSmallScreen, setActiveTab } = useContext(dataFlowContext);
   useEffect(() => {
+    setSmallScreen(false);
     setActiveTab("contact-management-active");
-  });
+  }, []);
+
   return <div>ContactManagement</div>;
 };
 

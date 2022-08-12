@@ -3,10 +3,11 @@ import "./TechHelp.css";
 import { dataFlowContext } from "../../App";
 
 const TechHelp = () => {
-  const { setActiveTab } = useContext(dataFlowContext);
+  const { setActiveTab, setSmallScreen } = useContext(dataFlowContext);
 
   useEffect(() => {
     setActiveTab("technical-active");
+    setSmallScreen(false);
   }, []);
   return <div>TechHelp</div>;
 };

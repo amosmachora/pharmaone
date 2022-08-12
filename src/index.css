@@ -159,3 +159,11 @@ input[type="submit"] {
     width: 30%;
   }
 }
+@media screen and (max-width: 650px) {
+  .padding-around {
+    height: 90vh;
+  }
+  .search {
+    width: 50%;
+  }
+}
