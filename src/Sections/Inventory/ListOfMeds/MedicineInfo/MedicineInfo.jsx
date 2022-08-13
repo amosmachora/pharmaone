@@ -330,32 +330,28 @@ const MedicineInfo = () => {
         </div>
         <div className="deleteMedicine">
           {deleteModal && (
-            <div className="deletemodal">
-              <form onSubmit={handleSubmit(onDelete)}>
-                <div className="deletemodal__container flex-v">
-                  <img
-                    src={Assets.Close}
-                    alt="Close Icon"
-                    onClick={closeDeleteModal}
-                  />
-                  <img src={Assets.Danger} alt="Danger" />
-                  <p>
-                    Are you sure you want to delete {medicineData.medicineName}{" "}
-                    ?
-                  </p>
-                  <div className="choices flex__container">
-                    <input type="submit" value="Yes, Delete" />
-                    <p
-                      onClick={() => {
-                        setDeleteModal(false);
-                        setOverlay(false);
-                      }}
-                    >
-                      Cancel
-                    </p>
-                  </div>
-                </div>
-              </form>
+            <div className="deletemodal flex-v">
+              <img
+                src={Assets.Close}
+                alt="Close Icon"
+                onClick={closeDeleteModal}
+                className="close-delete-modal cursor"
+              />
+              <img src={Assets.Danger} alt="Danger" />
+              <p>
+                Are you sure you want to delete {medicineData.medicineName} ?
+              </p>
+              <div className="choices flex space-between">
+                <input type="submit" value="Yes, Delete" onClick={onDelete} />
+                <p
+                  onClick={() => {
+                    setDeleteModal(false);
+                    setOverlay(false);
+                  }}
+                >
+                  Cancel
+                </p>
+              </div>
             </div>
           )}
           <div onClick={showDeleteModal}>

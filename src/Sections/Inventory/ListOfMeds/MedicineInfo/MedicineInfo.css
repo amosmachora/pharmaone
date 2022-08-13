@@ -1,5 +1,4 @@
 .Medicine__info-container {
-  position: relative;
   padding: 2% 4%;
 }
 .Medicine__info-top > :first-child {
@@ -66,10 +65,15 @@
   background-color: var(--border);
 }
 .edit__modal {
-  width: 90%;
+  width: 70%;
   background-color: var(--white);
   padding: 20px;
   border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
 }
 .edit__modal-header {
   justify-content: space-between;
@@ -130,11 +134,6 @@ textarea:focus {
   outline: none;
 }
 
-.edit__modal {
-  position: absolute;
-  top: 2%;
-  z-index: 6;
-}
 .edit__modal-header > img {
   cursor: pointer;
 }
@@ -163,40 +162,24 @@ textarea:focus {
   left: 50%;
   transform: translate(-50%, -50%);
   min-height: 250px;
-  width: 400px;
+  width: 30%;
   border-radius: 8px;
   background-color: var(--white);
   text-align: center;
   z-index: 6;
-}
-.deletemodal__container {
-  position: relative;
-  padding: 50px 20px;
   align-items: center;
+  justify-content: space-around;
+  padding: 30px 20px;
 }
-
-.deletemodal__container > img:first-of-type {
+.close-delete-modal {
   position: absolute;
-  right: 20px;
   top: 20px;
-  cursor: pointer;
-}
-.deletemodal__container > img:not(:first-of-type) {
-  margin-bottom: 20px;
-}
-.deletemodal__container > :last-child:not(.confirmbutton) {
-  width: 100%;
-  padding: 0px 10px;
-  justify-content: space-between;
-}
-.choices {
-  position: absolute;
-  bottom: -40px;
+  right: 20px;
 }
 .choices > p,
 .confirmbutton {
   border: 1px solid var(--skyBlue);
-  width: 150px;
+  width: 40%;
   cursor: pointer;
   padding: 12px;
   border-radius: 4px;
@@ -209,10 +192,9 @@ textarea:focus {
   position: absolute;
   left: 130px;
 }
-
 .choices > input {
   padding: 0.4em 0;
-  width: 150px;
+  width: 40%;
   font-size: 1rem;
   border-radius: 4px;
   outline: none;
@@ -310,7 +292,21 @@ textarea:focus {
   margin-left: 45%;
   margin-bottom: 20px;
 }
+.choices {
+  width: 85%;
+}
+@media screen and (max-width: 1150px) {
+  .edit__modal {
+    width: 90%;
+  }
+  .deletemodal {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 650px) {
+  .deletemodal {
+    width: 90%;
+  }
   .Medicine__info-top > :first-child {
     flex-direction: column;
   }
