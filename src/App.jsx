@@ -395,7 +395,7 @@ const App = () => {
             {success && (
               <div className="success flex border-radius-4">
                 <img src={Assets.Tick} alt="Tick" />
-                <p>{"Medicine Added to Group"}</p>
+                <p>{"Success!!!"}</p>
               </div>
             )}
           </div>
