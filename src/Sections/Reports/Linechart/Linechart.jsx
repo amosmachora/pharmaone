@@ -40,6 +40,17 @@ const LineChart = ({ selectedUserName, selectedGroup }) => {
     }
   }, [selectedUserName]);
 
+  useEffect(() => {
+    if (selectedGroup === "All Groups") {
+      return;
+    }
+    const filteredByGroup = salesList.filter(
+      (sale) => sale.medicine.medicineGroup.groupName === selectedGroup
+    );
+    setAmountValues(filteredByGroup.map((sale) => sale.amount));
+    setLabels(filteredByGroup.map((sale) => sale.saleDate));
+  }, [selectedGroup]);
+
   /**
    * Labels-> An array of strings on the x axis.
    * Dataset - > The data you are working with .
