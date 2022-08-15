@@ -42,6 +42,8 @@ const LineChart = ({ selectedUserName, selectedGroup }) => {
 
   useEffect(() => {
     if (selectedGroup === "All Groups") {
+      setAmountValues(sales.map((sale) => sale.amount));
+      setLabels(sales.map((sale) => sale.saleDate));
       return;
     }
     const filteredByGroup = salesList.filter(
