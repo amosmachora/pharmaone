@@ -89,7 +89,20 @@
   right: 5px;
   top: 0;
 }
+@media screen and (max-width: 1150px) {
+  .hamburger {
+    display: unset;
+    width: 30px;
+    height: 30px;
+  }
+  .small-screen-menu {
+    width: 30vw;
+  }
+}
 @media screen and (max-width: 650px) {
+  .small-screen-menu {
+    width: 60vw;
+  }
   .Pharmacy__topbar {
     height: 100px;
   }
@@ -102,11 +115,6 @@
   }
   .Topbar__input {
     width: 25%;
-  }
-  .hamburger {
-    display: unset;
-    width: 30px;
-    height: 30px;
   }
   .search-suggestions {
     width: 300%;
