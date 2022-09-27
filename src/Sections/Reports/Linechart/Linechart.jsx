@@ -18,7 +18,7 @@ const LineChart = ({ selectedUserName, selectedGroup }) => {
   const { salesList } = useContext(dataFlowContext);
   const [labels, setLabels] = useState([]);
   const [amountValues, setAmountValues] = useState([]);
-  const [sales, setSales] = useState(
+  const [sales] = useState(
     salesList.slice(salesList.length - 10, salesList.length)
   );
 
