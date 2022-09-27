@@ -17,6 +17,7 @@ A pharmacy application written in React.
 - Collapsible menus
 - Mobile responsive
 - Cross platform
+- [Figma Design file](https://www.figma.com/file/zdvyjDTe9grMoInsFnwzxM/Dashboard---Pharmacy-Management-(Community)?node-id=33%3A550)
 
 
 ## Authors
