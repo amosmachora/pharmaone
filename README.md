@@ -8,7 +8,8 @@ A pharmacy application written in React.
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://user-images.githubusercontent.com/81857018/192524028-4d84fe62-27f2-45ad-b135-ecd99b8588a5.png)
+
 
 
 ## Features
