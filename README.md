@@ -1,22 +1,21 @@
 
-# Pharmaone Backend
+# Pharmaone frontend
 
-A fullstack application for a pharmacy management application
-
-
-## Acknowledgements
-
- - [Koushik Kothagal](https://www.linkedin.com/in/koushikkothagal/)
- - [Kevin Bowersox](https://www.linkedin.com/in/kevin-bowersox-0307b08/)
- - [IPL Dashboard Spring-boot and react](https://www.youtube.com/watch?v=aL1oP4GJR7M&list=PLqq-6Pq4lTTa8V613TZhGq4o8hSgkMGQ0)
- - [Java Collections](https://www.linkedin.com/learning/learning-java-collections)
- - [Learning Spring with spring-boot](https://www.linkedin.com/learning/learning-spring-with-spring-boot-2019)
- - [Spring Data](https://www.linkedin.com/learning/spring-spring-data-2)
- - [Figma Design file](https://www.figma.com/file/zdvyjDTe9grMoInsFnwzxM/Dashboard---Pharmacy-Management-(Community)?node-id=33%3A550)
- 
+A pharmacy application written in React.
 
 
 
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Features
+
+- Collapsible menus
+- Mobile responsive
+- Cross platform
 
 
 ## Authors
@@ -24,17 +23,16 @@ A fullstack application for a pharmacy management application
 - [@amohprince](https://github.com/AmohPrince)
 
 
-
-![Logo](https://pharmaone.al/wp-content/uploads/2021/10/logo_pharma_one.png)
-
-
 ## 🚀 About Me
-I'm a full stack developer...
-Please consider giving any of my other projects a look 🤗
+I'm a full stack web developer. 
 
 
-## Installation
+## 🛠 Skills
+Javascript, HTML, CSS, React and many more on my profile...
 
-I have hosted the backend application on aws and the front
-end at vercel.
-https://pharmaone.vercel.app/
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](http://amosmachora.vercel.app)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amos-machora)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/amos_machora/)
+
