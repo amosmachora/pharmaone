@@ -16,7 +16,7 @@ const RightTab = () => {
   } = useContext(dataFlowContext);
   return (
     <>
-      <Link to="dashboard" style={{ textDecoration: "none" }}>
+      <Link to="/" style={{ textDecoration: "none" }}>
         <div
           className={`tab flex dashboard ${activeTab}`}
           onClick={() => {
