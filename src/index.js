@@ -32,7 +32,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="dashboard" element={<Dashboard />} />
+        <Route index element={<Dashboard />} />
         <Route path="inventory" element={<Inventory />} />
         <Route path="/inventory/listofmedicines" element={<ListOfMeds />} />
         <Route
